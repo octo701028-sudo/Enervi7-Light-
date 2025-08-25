@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enervi7 PWA (v6.1)</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#6a00ff" />
+  <style>
+    :root{--bg:#0f0b1e;--panel:#141126;--accent:#6a00ff;--text:#ece8ff;--muted:#bdb6df}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto}
+    header{padding:18px 16px;background:linear-gradient(90deg,#6a00ff,#8b5cf6)} h1{margin:0;font-size:22px}
+    .wrap{max-width:880px;margin:16px auto;padding:0 16px}
+    .card{background:var(--panel);border:1px solid #ffffff17;border-radius:14px;padding:16px;margin:14px 0;box-shadow:0 10px 30px #00000040}
+    .btn{background:var(--accent);border:none;color:#fff;border-radius:10px;padding:8px 12px;font-weight:600;cursor:pointer}
+    .pill{border:1px solid #ffffff24;border-radius:10px;padding:10px;margin:8px 0;background:#ffffff10}
+    .hint{color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Enervi7（v6.1）</h1>
+  <div class="hint">已加入：今日建議精油 ＋ 修正後的呢喃神諭卡（每日不重複）。</div>
+</header>
+
+<div class="wrap">
+
+  <section class="card">
+    <h2>🎴 呢喃神諭（Whispering Oracle）</h2>
+    <div id="oracle" class="pill">—</div>
+    <button id="draw" class="btn">抽一張</button>
+    <div class="hint">同一天僅顯示一張；隔天自動刷新。</div>
+  </section>
+
+  <section class="card">
+    <h2>🪔 今日建議精油</h2>
+    <div id="oil" class="pill">—</div>
+    <button id="reroll" class="btn" title="今天只記錄第一次，重新抽僅示意">換一款（示意）</button>
+    <div class="hint">顯示：英文名稱（官方中文）＋能量描述。</div>
+  </section>
+
+  <section class="card">
+    <h2>🌈 七階資訊卡（自動展開最低分）</h2>
+    <details open><summary>白｜能量覺知</summary><div class="pill">保持觀照，留意當下流動。</div></details>
+    <details><summary>藍｜穩定與淨化</summary><div class="pill">釋放情緒，維持節奏。</div></details>
+    <div class="hint">完整量表與雷達圖在 v7 會一併補上新版 UI。</div>
+  </section>
+
+</div>
+
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js');}
+
+const ORA_KEY='e7_oracle_v6_1';
+const OIL_KEY='e7_oil_v6_1';
+
+function today(){return new Date().toISOString().slice(0,10);}
+function pick(arr){return arr[Math.floor(Math.random()*arr.length)]}
+async function loadJSON(p){const r=await fetch(p);return r.json()}
+
+function setOracleForToday(card){
+  localStorage.setItem(ORA_KEY, JSON.stringify({date:today(), id:card.id}));
+}
+function getOracleFromStorage(){try{return JSON.parse(localStorage.getItem(ORA_KEY))}catch(e){return null}}
+
+async function showOracle(){
+  const deck=await loadJSON('oracle_whispering.json');
+  let saved=getOracleFromStorage();
+  let card;
+  if(!saved || saved.date!==today()){
+    // 今天還沒抽過 → 亂數抽且儲存
+    card = pick(deck);
+    setOracleForToday(card);
+  }else{
+    card = deck.find(x=>x.id===saved.id) || pick(deck);
+  }
+  document.getElementById('oracle').innerHTML = '<b>「'+card.title+'」</b><div class="hint">'+card.poem+'</div><div>行動：'+card.action+'</div>';
+}
+
+function setOilForToday(item){
+  localStorage.setItem(OIL_KEY, JSON.stringify({date:today(), name:item.name}));
+}
+function getOilFromStorage(){try{return JSON.parse(localStorage.getItem(OIL_KEY))}catch(e){return null}}
+async function showOil(forceNew=false){
+  const oils=await loadJSON('yl_blends.json');
+  let saved=getOilFromStorage(), item;
+  if(forceNew || !saved || saved.date!==today()){
+    item = pick(oils);
+    setOilForToday(item);
+  }else{
+    item = oils.find(x=>x.name===saved.name) || pick(oils);
+  }
+  document.getElementById('oil').innerHTML = '<b>'+item.name+'（'+item.zh_name+'）</b><div class="hint">'+item.description+'</div>';
+}
+
+document.getElementById('draw').addEventListener('click', showOracle);
+document.getElementById('reroll').addEventListener('click', ()=>showOil(true));
+
+// init
+showOracle(); showOil();
+</script>
+</body>
+</html>
