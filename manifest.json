@@ -1,5 +1,5 @@
 {
-  "name": "Enervi7 PWA v6.1",
+  "name": "Enervi7",
   "short_name": "Enervi7",
   "start_url": ".",
   "display": "standalone",
@@ -14,8 +14,7 @@
     {
       "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ]
 }

@@ -1,349 +1,98 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-<meta charset="utf-8"/>
+
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Enervi7 PWA（v6.3 黏著性版）</title>
-<link rel="manifest" href="manifest.json"/>
-<meta name="theme-color" content="#6a00ff"/>
+<title>Enervi7 v7.0</title>
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#6a00ff">
 <style>
-  :root{--bg:#0f0b1e;--panel:#141126;--accent:#6a00ff;--text:#ece8ff;--muted:#bdb6df;--ok:#22c55e;--warn:#f59e0b;--ring:#ffffff24}
-  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto}
-  header{padding:18px 16px;background:linear-gradient(90deg,#6a00ff,#8b5cf6)}
-  h1{margin:0;font-size:22px}
-  .wrap{max-width:1000px;margin:16px auto;padding:0 16px}
-  .card{background:var(--panel);border:1px solid #ffffff17;border-radius:14px;padding:16px;margin:14px 0;box-shadow:0 10px 30px #00000040}
-  .hint{color:var(--muted);font-size:13px}
-  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-  .badge{display:inline-block;padding:2px 8px;border-radius:999px;background:#ffffff1a;border:1px solid #ffffff2e;font-size:12px}
-  .btn{background:var(--accent);border:none;color:#fff;border-radius:10px;padding:10px 14px;font-weight:600;cursor:pointer}
-  .btn.ghost{background:#ffffff12;border:1px solid #ffffff26}
-  .btn.flat{background:#ffffff14;border:1px solid #ffffff2a;color:#fff}
-  details{background:#ffffff07;border:1px solid #ffffff1c;border-radius:10px;padding:10px;margin:10px 0}
-  details[open]{outline:2px solid #ffffff1f}
-  summary{cursor:pointer;font-weight:700}
-  .pill{border:1px solid #ffffff24;border-radius:10px;padding:10px;margin:8px 0;background:#ffffff10}
-  .q{padding:10px;border-radius:10px;background:#ffffff07;border:1px solid #ffffff1a;margin:10px 0}
-  .q h4{margin:0 0 6px 0;font-size:15px}
-  input[type=range]{width:100%}
-  .scale-note{margin-top:6px;color:var(--muted);font-size:12px}
-  canvas{max-width:100%;background:#0d0a1d;border-radius:12px;border:1px solid #ffffff14}
-  .score-tag{padding:2px 8px;border-radius:8px;background:#ffffff14;font-size:12px;margin-left:6px}
-  .good{background:#1b3e23;border:1px solid #2dd36f}
-  .avg{background:#2a2544;border:1px solid #8b5cf6}
-  .progress{height:10px;background:#ffffff14;border-radius:999px;overflow:hidden;border:1px solid #ffffff24}
-  .bar{height:100%;background:linear-gradient(90deg,#6a00ff,#22c55e)}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
-  .medal{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;border:1px solid var(--ring);background:#ffffff08;border-radius:12px;padding:12px}
-  .medal .icon{width:48px;height:48px;border-radius:50%;background:#1e1638;border:2px solid #7c3aed;display:grid;place-items:center;box-shadow:0 0 0 4px #00000044}
-  .medal.active .icon{background:#1b2b1f;border-color:#22c55e;box-shadow:0 0 0 4px #184a2d}
-  .card-list{display:flex;gap:10px;flex-wrap:wrap}
-  .soul{border:1px dashed var(--ring);border-radius:12px;padding:10px 12px;background:#ffffff06}
-  .soul.lock{opacity:.6}
-</style>
-</head>
-<body>
-<header>
-  <h1>Enervi7（v6.3 黏著性版）</h1>
-  <div class="hint">含：14 題量表＋雷達圖＋最低分自動展開／呢喃神諭不重複／今日建議精油／連續旅程挑戰＋徽章＋隱藏靈魂卡。</div>
-</header>
-
+:root{--bg:#0f0b1e;--panel:#141126;--accent:#6a00ff;--text:#ece8ff;--muted:#bdb6df}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto}
+header{padding:18px 16px;background:linear-gradient(90deg,#6a00ff,#8b5cf6)}
+h1{margin:0;font-size:22px}.hint{color:var(--muted);font-size:13px}
+.wrap{max-width:960px;margin:16px auto;padding:0 14px}
+.card{background:var(--panel);border:1px solid #ffffff20;border-radius:14px;padding:14px;margin:12px 0}
+.q{padding:8px 10px;border:1px solid #ffffff22;border-radius:10px;margin:8px 0;background:#ffffff08}
+.btn{background:var(--accent);border:none;color:#fff;border-radius:10px;padding:10px 14px;font-weight:600}
+.badges{display:flex;gap:10px}.badge{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;border:2px solid #ffffff33}
+.badge.on{background:#10b98122;border-color:#10b981}
+.score{padding:3px 8px;border:1px solid #ffffff2a;border-radius:8px;background:#ffffff14}
+.pill{display:inline-block;background:#ffffff12;border:1px solid #ffffff24;border-radius:999px;padding:4px 10px;margin:2px;font-size:12px}
+.small{font-size:12px;color:#bdb6df}
+canvas{max-width:100%;background:#0d0a1d;border:1px solid #ffffff18;border-radius:12px}
+</style></head><body>
+<header><h1>Enervi7 v7.0</h1><div class="hint">14 題＋雷達＋最低分補強＋呢喃神諭＋今日精油＋旅程徽章＋隱藏卡</div></header>
 <div class="wrap">
+<section class="card"><h2>🌀 旅程 & 徽章</h2>
+  <div>連續：<b id="streak">0</b> ｜ 累積：<b id="total">0</b></div>
+  <div class="badges" style="margin-top:8px">
+    <div id="b7" class="badge">7</div><div id="b21" class="badge">21</div><div id="b30" class="badge">30</div>
+  </div>
+  <button class="btn" id="done">✅ 完成今日</button> <span id="unlock" class="small"></span>
+</section>
 
-  <!-- 量表 + 雷達 -->
-  <section class="card" id="survey">
-    <div class="row" style="justify-content:space-between;align-items:end">
-      <h2>🧭 14 題量表</h2>
-      <div class="hint">0 = 完全不符合／幾乎沒有　|　10 = 非常符合／幾乎總是</div>
-    </div>
-    <div id="qlist"></div>
-    <div class="row" style="gap:10px;margin-top:10px">
-      <button class="btn" id="gen">生成能量圖</button>
-      <button class="btn ghost" id="reset">全部重置</button>
-    </div>
-    <div id="result" style="display:none;margin-top:14px">
-      <div class="pill" id="summary">—</div>
-      <canvas id="radar" width="720" height="520"></canvas>
-    </div>
-  </section>
+<section class="card"><h2>🧭 14 題量表（0–10）</h2><div id="qs"></div>
+  <button class="btn" id="go">生成能量圖</button>
+  <div id="res" style="display:none;margin-top:10px">
+    <div id="sum" class="hint">—</div>
+    <canvas id="radar" width="740" height="500"></canvas>
+  </div>
+</section>
 
-  <!-- 即時回饋 -->
-  <section class="card">
-    <h2>🎴 呢喃神諭（Whispering Oracle）</h2>
-    <div id="oracle" class="pill">—</div>
-    <button id="draw" class="btn">抽一張</button>
-    <div class="hint">同一天僅顯示一張；隔天自動刷新。</div>
-  </section>
+<section class="card" id="lowestPanel" style="display:none"><h2>🧩 瓶頸補強卡</h2><div id="stageTips"></div></section>
 
-  <section class="card">
-    <h2>🪔 今日建議精油</h2>
-    <div id="oil" class="pill">—</div>
-    <button id="reroll" class="btn" title="今天只記錄第一次，重新抽僅示意">換一款（示意）</button>
-    <div class="hint">顯示：英文名稱（官方中文）＋能量描述（來自 <code>yl_blends.json</code>）。</div>
-  </section>
+<section class="card"><h2>🎴 呢喃神諭</h2><div id="oracle" class="hint">—</div><button class="btn" id="draw">抽一張</button></section>
 
-  <!-- 七階資訊卡 -->
-  <section class="card" id="cards">
-    <h2>🌈 七階資訊卡（測驗後自動展開最低分）</h2>
-    <div id="cardsHost"></div>
-  </section>
+<section class="card"><h2>🪔 今日建議精油</h2><div id="oil" class="hint">—</div><button class="btn" id="reroll">換一款</button></section>
 
-  <!-- A. 連續旅程挑戰 -->
-  <section class="card" id="journey">
-    <h2>🌀 連續旅程挑戰</h2>
-    <div class="row">
-      <button class="btn flat" data-plan="7">啟動 7 日能量挑戰</button>
-      <button class="btn flat" data-plan="21">啟動 21 日靈魂轉化</button>
-      <button class="btn flat" data-plan="310">啟動 310 日顯化日記</button>
-    </div>
-    <div class="pill" id="planInfo">尚未啟動挑戰。</div>
-    <div class="progress"><div class="bar" id="planBar" style="width:0%"></div></div>
-    <div class="row" style="margin-top:10px">
-      <button class="btn" id="checkin">今日打卡</button>
-      <span class="hint" id="streakInfo">連續 0 天</span>
-    </div>
-  </section>
+<section class="card"><h2>🌈 七階關鍵字＋行動</h2><div id="stageList"></div></section>
 
-  <!-- B. 成就徽章 -->
-  <section class="card" id="badges">
-    <h2>🏅 成就徽章</h2>
-    <div class="grid">
-      <div class="medal" id="b7"><div class="icon">7</div><div>連續 7 日</div></div>
-      <div class="medal" id="b21"><div class="icon">21</div><div>光之行者</div></div>
-      <div class="medal" id="b30"><div class="icon">30</div><div>靈魂整合卡</div></div>
-    </div>
-  </section>
-
-  <!-- C. 隱藏卡牌 -->
-  <section class="card" id="hidden">
-    <h2>🎴 隱藏靈魂卡（每滿 7 日解鎖 1 張）</h2>
-    <div class="hint" id="hiddenHint">已解鎖 0 / 33 張</div>
-    <div class="card-list" id="hiddenList"></div>
-  </section>
-
+<section class="card"><h2>🗝️ 已解鎖的隱藏卡</h2><div id="unlocked" class="small">尚未解鎖。</div></section>
 </div>
 
 <script>
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js');}
-
-// ========= 量表資料 =========
-const PHASES = [
-  { key:'白',   name:'能量覺知',   color:'#ffffff' },
-  { key:'藍',   name:'穩定與淨化', color:'#60a5fa' },
-  { key:'橙',   name:'能量流動',   color:'#fb923c' },
-  { key:'黃',   name:'內在力量',   color:'#facc15' },
-  { key:'綠',   name:'共振與連結', color:'#22c55e' },
-  { key:'靛藍', name:'意識擴展',   color:'#818cf8' },
-  { key:'紫',   name:'靈魂整合',   color:'#a78bfa' },
+const P=[{k:'白',n:'覺察'},{k:'藍',n:'釋放'},{k:'橙',n:'信任'},{k:'黃',n:'行動'},{k:'綠',n:'流動'},{k:'靛藍',n:'共鳴'},{k:'紫',n:'整合'}];
+const Q=[
+{p:0,t:'我能清楚覺察自己此刻的身心狀態。'},{p:0,t:'我能在混亂時，迅速把注意力帶回當下。'},
+{p:1,t:'面對壓力或衝突時，我能保持冷靜不失衡。'},{p:1,t:'我能有效地釋放累積的負面情緒與雜念。'},
+{p:2,t:'我常感覺靈感／情感在體內自然流動。'},{p:2,t:'我能順勢調整步調，不僵硬或卡住。'},
+{p:3,t:'做決定時，我能堅定地選擇對自己真的好的事。'},{p:3,t:'遇到挑戰，我仍能相信自己並往前一步。'},
+{p:4,t:'我能真誠表達，也樂於傾聽他人。'},{p:4,t:'我能感到自己與他人、與世界是連結的。'},
+{p:5,t:'我信任直覺，且能從中獲得有用的指引。'},{p:5,t:'我能從日常事件看見更深的洞見與意義。'},
+{p:6,t:'我能把過去的經驗整合成力量，而不是枷鎖。'},{p:6,t:'我常感到自己完整、對生命方向踏實安心。'}
 ];
+const host=document.getElementById('qs');
+Q.forEach((q,i)=>{const e=document.createElement('div');e.className='q';e.innerHTML=`<div>${i+1}. <b>${P[q.p].k}｜${P[q.p].n}</b>．${q.t}</div><input type="range" min="0" max="10" step="1" value="5" id="r${i}"><div class="score" id="v${i}">5</div>`;host.appendChild(e);e.querySelector(`#r${i}`).addEventListener('input',ev=>e.querySelector(`#v${i}`).textContent=ev.target.value);});
 
-const QUESTIONS = [
-  {phase:0, text:'我能清楚覺察自己此刻的身心狀態。'},
-  {phase:0, text:'我能在混亂時，迅速把注意力帶回當下。'},
-  {phase:1, text:'面對壓力或衝突時，我能保持冷靜不失衡。'},
-  {phase:1, text:'我能有效地釋放累積的負面情緒與雜念。'},
-  {phase:2, text:'我常感覺靈感／情感在體內自然流動。'},
-  {phase:2, text:'我能順勢調整步調，不僵硬或卡住。'},
-  {phase:3, text:'做決定時，我能堅定地選擇對自己真的好的事。'},
-  {phase:3, text:'遇到挑戰，我仍能相信自己並往前一步。'},
-  {phase:4, text:'我能真誠表達，也樂於傾聽他人。'},
-  {phase:4, text:'我能感到自己與他人、與世界是連結的。'},
-  {phase:5, text:'我信任直覺，且能從中獲得有用的指引。'},
-  {phase:5, text:'我能從日常事件看見更深的洞見與意義。'},
-  {phase:6, text:'我能把過去的經驗整合成力量，而不是枷鎖。'},
-  {phase:6, text:'我常感到自己完整、對生命方向踏實安心。'},
-];
+function avg(){const s=Array(7).fill(0),c=Array(7).fill(0);Q.forEach((q,i)=>{const v=+document.getElementById('r'+i).value;s[q.p]+=v;c[q.p]++});return s.map((x,i)=>c[i]?x/c[i]:0)}
+function radar(vals){const cv=document.getElementById('radar'),ctx=cv.getContext('2d'),W=cv.width,H=cv.height,cx=W/2,cy=H/2,R=Math.min(W,H)*0.35;ctx.clearRect(0,0,W,H);ctx.save();ctx.translate(cx,cy);ctx.strokeStyle='#ffffff22';for(let s=1;s<=5;s++){ctx.beginPath();ctx.arc(0,0,R*s/5,0,Math.PI*2);ctx.stroke()}for(let i=0;i<7;i++){const a=-Math.PI/2+i*(Math.PI*2/7);ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(Math.cos(a)*R,Math.sin(a)*R);ctx.stroke()}ctx.beginPath();vals.forEach((v,i)=>{const a=-Math.PI/2+i*(Math.PI*2/7),rr=(v/10)*R;const x=Math.cos(a)*rr,y=Math.sin(a)*rr;i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.closePath();ctx.fillStyle='#7c3aed55';ctx.fill();ctx.strokeStyle='#7c3aed';ctx.stroke();ctx.restore();}
 
-const CARD_TIPS = [
-  { key:'白',   keywords:'覺知、清明、面對當下',  actions:['寫三句「此刻我真實的感受是…」','3 分鐘腹式呼吸（4-4-6）','標註 1 個念頭：事實或解讀？'] },
-  { key:'藍',   keywords:'穩定、釋放、界線',      actions:['寫下最困擾你的 1 件事（可控/不可控）','3 分鐘身體掃描','用水或精油做 3 分鐘淨化'] },
-  { key:'橙',   keywords:'流動、創造、感受',      actions:['今天做一件 3 分鐘的小創作','列出 1 件讓你喜悅的小事','讓身體隨音樂擺動 1 分鐘'] },
-  { key:'黃',   keywords:'力量、選擇、界定',      actions:['把目標拆成「10 分鐘可完成的一步」','做一件提升掌控感的小事','對一件事說「不」'] },
-  { key:'綠',   keywords:'連結、共振、支持',      actions:['給一個人一句真誠肯定','5 分鐘深度傾聽','寫下一件想感謝的人事物'] },
-  { key:'靛藍', keywords:'洞見、直覺、擴展',      actions:['閉眼 60 秒：內在想對我說什麼？','寫下一個今天的同步巧合','把困擾換 1 個更高視角'] },
-  { key:'紫',   keywords:'整合、臣服、完整',      actions:['列出 1 件已完成並致意自己','寫下可放下的一件事','靜坐 2 分鐘，觀想內在合一'] },
-];
+function today(){return new Date().toISOString().slice(0,10)}
+function pick(a){return a[Math.floor(Math.random()*a.length)]}
+async function load(p){const r=await fetch(p);return r.ok? r.json():null}
 
-// ========= 渲染 14 題 =========
-const qHost = document.getElementById('qlist');
-QUESTIONS.forEach((q, i)=>{
-  const p = PHASES[q.phase];
-  const el = document.createElement('div');
-  el.className='q';
-  el.innerHTML = `
-    <h4>${i+1}. <span class="badge">${p.key}｜${p.name}</span></h4>
-    <div>${q.text}</div>
-    <div class="row" style="gap:10px;margin-top:8px">
-      <input type="range" min="0" max="10" step="1" value="5" id="r${i}"/>
-      <span class="score-tag avg" id="v${i}">5</span>
-    </div>
-    <div class="scale-note">0 = 完全不符合　／　10 = 非常符合</div>
-  `;
-  qHost.appendChild(el);
-  el.querySelector(`#r${i}`).addEventListener('input', e=>{
-    el.querySelector(`#v${i}`).textContent = e.target.value;
-  });
-});
-
-document.getElementById('reset').onclick=()=>{
-  QUESTIONS.forEach((_,i)=>{
-    document.getElementById(`r${i}`).value=5;
-    document.getElementById(`v${i}`).textContent=5;
-  });
-  document.getElementById('result').style.display='none';
-};
-
-function computePhaseAverages(){
-  const sums = Array(PHASES.length).fill(0);
-  const counts = Array(PHASES.length).fill(0);
-  QUESTIONS.forEach((q,i)=>{
-    const v = +document.getElementById(`r${i}`).value;
-    sums[q.phase]+=v; counts[q.phase]+=1;
-  });
-  return sums.map((s,i)=> (counts[i]? s/counts[i] : 0));
+const K_STREAK='e7_streak', K_TOTAL='e7_total', K_LAST='e7_lastDay', K_UNLOCK='e7_unlocked';
+function read(k,d){try{const v=JSON.parse(localStorage.getItem(k));return v??d}catch(_){return d}}
+function write(k,v){localStorage.setItem(k,JSON.stringify(v))}
+function updateBadges(){const s=read(K_STREAK,0);document.getElementById('streak').textContent=s;document.getElementById('total').textContent=read(K_TOTAL,0);
+['b7','b21','b30'].forEach(id=>document.getElementById(id).classList.remove('on')); if(s>=7)document.getElementById('b7').classList.add('on'); if(s>=21)document.getElementById('b21').classList.add('on'); if(s>=30)document.getElementById('b30').classList.add('on');}
+async function onDone(){const last=read(K_LAST,''),t=today();let s=read(K_STREAK,0), tot=read(K_TOTAL,0);
+ if(last!==t){ s = (last && ((new Date(t)-new Date(last))===86400000)) ? s+1 : 1; tot+=1; write(K_LAST,t); write(K_STREAK,s); write(K_TOTAL,tot); updateBadges();
+ let msg='已記錄今天 ✔️'; if(s%7===0){ const deck=await load('hidden_cards.json'); const arr=read(K_UNLOCK,[]); const next=deck.find(c=>!arr.includes(c.id)); if(next){arr.push(next.id); write(K_UNLOCK,arr); msg+=' ｜ 解鎖：'+next.title; renderUnlocked(arr,deck);} }
+ document.getElementById('unlock').textContent=msg; }
 }
+document.getElementById('done').onclick=onDone; updateBadges();
 
-function drawRadar(values){
-  const cv = document.getElementById('radar');
-  const ctx = cv.getContext('2d');
-  const W=cv.width, H=cv.height;
-  ctx.clearRect(0,0,W,H);
-  const cx=W/2, cy=H/2+10;
-  const radius = Math.min(W,H)*0.35;
-  const steps = 5;
-  ctx.save(); ctx.translate(cx,cy);
-  ctx.strokeStyle = '#ffffff22';
-  for(let s=1;s<=steps;s++){ ctx.beginPath(); ctx.arc(0,0,radius*s/steps,0,Math.PI*2); ctx.stroke(); }
-  for(let i=0;i<PHASES.length;i++){ const a = -Math.PI/2 + i*(Math.PI*2/PHASES.length); ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(Math.cos(a)*radius, Math.sin(a)*radius); ctx.stroke(); }
-  ctx.beginPath();
-  values.forEach((v,i)=>{ const r=radius*(v/10), a=-Math.PI/2+i*(Math.PI*2/PHASES.length); const x=Math.cos(a)*r, y=Math.sin(a)*r; if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y); });
-  ctx.closePath(); ctx.fillStyle='#8b5cf680'; ctx.strokeStyle='#a78bfa'; ctx.lineWidth=2; ctx.fill(); ctx.stroke();
-  ctx.fillStyle='#bdb6df'; ctx.font='14px system-ui';
-  values.forEach((v,i)=>{ const a=-Math.PI/2+i*(Math.PI*2/PHASES.length); const x=Math.cos(a)*(radius+24), y=Math.sin(a)*(radius+24); ctx.fillText(`${PHASES[i].key}`, x-8, y+5); });
-  ctx.restore();
-}
+async function renderUnlocked(ids=null, deck=null){ deck=deck || await load('hidden_cards.json'); ids = ids ?? read(K_UNLOCK,[]); const box=document.getElementById('unlocked'); if(!ids.length){box.textContent='尚未解鎖。'; return} box.innerHTML=ids.map(i=>{const c=deck.find(x=>x.id===i); return `<span class='pill'>#${c.id}｜${c.title}</span>`}).join(' ') }
 
-document.getElementById('gen').onclick=()=>{
-  const avgs = computePhaseAverages();
-  const maxI = avgs.indexOf(Math.max(...avgs));
-  const minI = avgs.indexOf(Math.min(...avgs));
-  const summary = `最高：${PHASES[maxI].key}｜${PHASES[maxI].name} ${avgs[maxI].toFixed(1)}　／　最低：${PHASES[minI].key}｜${PHASES[minI].name} ${avgs[minI].toFixed(1)}`;
-  document.getElementById('summary').textContent = summary;
-  document.getElementById('result').style.display='block';
-  drawRadar(avgs);
-  renderCards(avgs, minI);
-  document.getElementById('result').scrollIntoView({behavior:'smooth',block:'center'});
-};
+async function showOracle(){ const store='e7_oracle_v70'; const deck=await load('oracle_whispering.json'); const rec=read(store,{}); const t=today(); let card; if(rec.d!==t){ card=pick(deck); write(store,{d:t,id:card.id}); } else { card=deck.find(x=>x.id===rec.id)||deck[0]; } document.getElementById('oracle').innerHTML=`<b>「${card.title}」</b><div class="hint">${card.poem}</div><div>行動：${card.action}</div>` }
+async function showOil(force){ const store='e7_oil_v70'; const list=await load('yl_blends.json'); const rec=read(store,{}); const t=today(); let item; if(force||rec.d!==t){ item=pick(list); write(store,{d:t,name:item.name}); } else { item=list.find(x=>x.name===rec.name)||list[0]; } document.getElementById('oil').innerHTML=`<b>${item.name}（${item.zh_name}）</b><div class="hint">${item.description}</div>` }
+document.getElementById('draw').onclick=showOracle; document.getElementById('reroll').onclick=()=>showOil(true); showOracle(); showOil(); renderUnlocked();
 
-function renderCards(avgs, minIndex){
-  const host = document.getElementById('cardsHost');
-  host.innerHTML = '';
-  PHASES.forEach((p,idx)=>{
-    const cfg = CARD_TIPS[idx];
-    const score = avgs ? avgs[idx].toFixed(1) : '-';
-    const state = !avgs ? '' : (avgs[idx] >= 7 ? '<span class="score-tag good">優勢</span>' : '<span class="score-tag">觀照</span>');
-    const det = document.createElement('details');
-    if(avgs && idx===minIndex) det.open = true; // 自動展開最低分
-    det.innerHTML = `
-      <summary>${p.key}｜${p.name}　<span class="score-tag avg">${score}</span> ${state}</summary>
-      <div class="pill"><b>關鍵字：</b>${cfg.keywords}</div>
-      <div class="pill"><b>行動建議：</b><ul style="margin:6px 0 0 18px">${cfg.actions.map(a=>`<li>${a}</li>`).join('')}</ul></div>`;
-    host.appendChild(det);
-  });
-}
-renderCards(null,null);
+async function renderStageList(){ const data=await load('stages.json'); const order=['S1','S2','S3','S4','S5','S6','S7']; const box=document.getElementById('stageList'); box.innerHTML=''; order.forEach((k,i)=>{const st=data[k]; const el=document.createElement('div'); el.className='q'; el.innerHTML=`<div><b>${i+1}. ${st.name} (${st.en})</b></div>`+ st.keywords.map(x=>`<span class='pill'>${x}</span>`).join(' ') + `<div class='small'>行動：${st.actions.join('、')}</div>`; box.appendChild(el); }); }
+renderStageList();
 
-// ========= 神諭 + 今日精油 =========
-const ORA_KEY='e7_oracle_v6_3';
-const OIL_KEY='e7_oil_v6_3';
-function today(){return new Date().toISOString().slice(0,10);}
-function pick(arr){return arr[Math.floor(Math.random()*arr.length)]}
-async function loadJSON(p){const r=await fetch(p).catch(()=>null);return (r && r.ok)? r.json() : null}
+async function renderLowest(a){ const idx=a.map((v,i)=>[v,i]).sort((x,y)=>x[0]-y[0]).slice(0,2).map(x=>x[1]); const data=await load('stages.json'); const trans=await load('transitions.json'); const order=['S1','S2','S3','S4','S5','S6','S7']; const box=document.getElementById('stageTips'); box.innerHTML='';
+ idx.forEach(i=>{ const k=order[i]; const st=data[k]; const tid='T'+(i+1); const t=trans[tid]; const div=document.createElement('div'); div.className='q'; div.innerHTML=`<div><b>${st.name}</b>（${P[i].k}）</div><div class='small'>關鍵字：${st.keywords.join('、')}</div><div>建議：${st.actions.join('、')}</div><div class='small'>${t.title}：${t.tips.join('；')}</div>`; box.appendChild(div); }); document.getElementById('lowestPanel').style.display='block'; }
 
-const ORA_FALLBACK=[{"id":1,"title":"歸來","poem":"你不是回頭，而是發現：你一直都在。","action":"今天，對自己說：我已經回來了。"},{"id":2,"title":"成為","poem":"你沒有變得更好，只是變得更真。","action":"允許自己出現，哪怕只是 1 分鐘。"},{"id":3,"title":"靜默","poem":"沉默不是空白，是語言之前的完整。","action":"把手放在心口，呼吸 60 秒。"}];
-const OIL_FALLBACK=[{"name":"Peace & Calming","zh_name":"舒靜","description":"安撫情緒，帶來深層寧眠與內在平靜。"},{"name":"Harmony","zh_name":"和諧（樂融）","description":"平衡身心能量，促進內在與關係的協調連結。"},{"name":"Forgiveness","zh_name":"寬恕","description":"釋放過去結，帶來心靈的自由與療癒。"}];
-
-function setOracleForToday(card){localStorage.setItem(ORA_KEY, JSON.stringify({date:today(), id:card.id}))}
-function getOracleFromStorage(){try{return JSON.parse(localStorage.getItem(ORA_KEY))}catch(e){return null}}
-async function showOracle(){
-  let deck = await loadJSON('oracle_whispering.json') || ORA_FALLBACK;
-  let saved=getOracleFromStorage(), card;
-  if(!saved || saved.date!==today()){ card=pick(deck); setOracleForToday(card); } else { card=deck.find(x=>x.id===saved.id) || pick(deck); }
-  document.getElementById('oracle').innerHTML = `<b>「${card.title}」</b><div class="hint">${card.poem}</div><div>行動：${card.action}</div>`;
-}
-document.getElementById('draw').addEventListener('click', showOracle);
-
-function setOilForToday(item){localStorage.setItem(OIL_KEY, JSON.stringify({date:today(), name:item.name}))}
-function getOilFromStorage(){try{return JSON.parse(localStorage.getItem(OIL_KEY))}catch(e){return null}}
-async function showOil(forceNew=false){
-  let oils = await loadJSON('yl_blends.json') || OIL_FALLBACK;
-  let saved=getOilFromStorage(), item;
-  if(forceNew || !saved || saved.date!==today()){ item=pick(oils); setOilForToday(item); } else { item=oils.find(x=>x.name===saved.name) || pick(oils); }
-  document.getElementById('oil').innerHTML = `<b>${item.name}（${item.zh_name}）</b><div class="hint">${item.description}</div>`;
-}
-document.getElementById('reroll').addEventListener('click', ()=>showOil(true));
-showOracle(); showOil();
-
-// ========= A/B/C 黏著性邏輯 =========
-const JOURNEY_KEY='e7_journey'; // {plan:7|21|310, start:'YYYY-MM-DD'}
-const STREAK_KEY='e7_streak';   // {last:'YYYY-MM-DD', count:n, total:n}
-const HIDDEN_KEY='e7_hidden';   // {unlocked:n}
-
-function loadLS(k,def){try{const v=JSON.parse(localStorage.getItem(k));return v??def}catch(e){return def}}
-function saveLS(k,v){localStorage.setItem(k,JSON.stringify(v))}
-
-function setPlan(days){
-  const j={plan:days, start:today()}; saveLS(JOURNEY_KEY,j);
-  updatePlanUI();
-}
-function daysSince(a,b){ // diff between YYYY-MM-DD
-  const d1=new Date(a+"T00:00:00"), d2=new Date(b+"T00:00:00"); return Math.round((d2-d1)/86400000);
-}
-function planProgress(){
-  const j=loadLS(JOURNEY_KEY,null); if(!j) return {text:'尚未啟動挑戰。',pct:0,days:0,plan:0};
-  const d=daysSince(j.start,today())+1; // 第一天算 1
-  const pct=Math.max(0,Math.min(100,Math.round(d/j.plan*100)));
-  return {text:`進行第 ${d} 天／共 ${j.plan} 天`,pct,days:d,plan:j.plan};
-}
-function updatePlanUI(){
-  const p=planProgress();
-  document.getElementById('planInfo').textContent=p.text;
-  document.getElementById('planBar').style.width=p.pct+'%';
-}
-document.querySelectorAll('#journey [data-plan]').forEach(b=>b.addEventListener('click',()=>setPlan(+b.dataset.plan)));
-
-function checkinToday(){
-  let s=loadLS(STREAK_KEY,{last:null,count:0,total:0});
-  if(s.last===today()){ alert('今天已打卡 ✅'); return; }
-  if(s.last && daysSince(s.last,today())===1){ s.count+=1; } else { s.count=1; }
-  s.total+=1; s.last=today(); saveLS(STREAK_KEY,s);
-  // 隱藏卡：每滿 7 日解鎖
-  if(s.total%7===0){ let h=loadLS(HIDDEN_KEY,{unlocked:0}); if(h.unlocked<33){h.unlocked++; saveLS(HIDDEN_KEY,h);} }
-  updateStreakUI(); updateBadges(); renderHidden();
-}
-function updateStreakUI(){
-  const s=loadLS(STREAK_KEY,{count:0}); document.getElementById('streakInfo').textContent=`連續 ${s.count} 天`;
-}
-document.getElementById('checkin').addEventListener('click', checkinToday);
-
-function updateBadges(){
-  const s=loadLS(STREAK_KEY,{count:0});
-  document.getElementById('b7').classList.toggle('active', s.count>=7);
-  document.getElementById('b21').classList.toggle('active', s.count>=21);
-  document.getElementById('b30').classList.toggle('active', s.count>=30);
-}
-function renderHidden(){
-  const h=loadLS(HIDDEN_KEY,{unlocked:0});
-  document.getElementById('hiddenHint').textContent=`已解鎖 ${h.unlocked} / 33 張`;
-  const host=document.getElementById('hiddenList'); host.innerHTML='';
-  for(let i=1;i<=33;i++){
-    const d=document.createElement('div'); d.className='soul'+(i<=h.unlocked?'':' lock');
-    d.innerHTML=`#${i}　${i<=h.unlocked? '靈魂呢喃：你比自己以為的還靠近。':'鎖定中'}`;
-    host.appendChild(d);
-  }
-}
-
-updatePlanUI(); updateStreakUI(); updateBadges(); renderHidden();
-</script>
-</body>
-</html>
+document.getElementById('go').onclick=()=>{ const a=avg(); const maxI=a.indexOf(Math.max(...a)), minI=a.indexOf(Math.min(...a)); document.getElementById('sum').textContent=`最高：${P[maxI].k} ${a[maxI].toFixed(1)}／最低：${P[minI].k} ${a[minI].toFixed(1)}`; document.getElementById('res').style.display='block'; radar(a); renderLowest(a); };
+</script></body></html>
