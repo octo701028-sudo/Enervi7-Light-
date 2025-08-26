@@ -22,7 +22,7 @@
   {
     "name": "Abundance",
     "zh_name": "豐盛",
-    "description": "提升顯化能量，吸引繁盛與豐裕。"
+    "description": "提升顯化能量，吸引繁盛與豐裕進入生命。"
   },
   {
     "name": "Forgiveness",
@@ -37,7 +37,7 @@
   {
     "name": "Dream Catcher",
     "zh_name": "捕夢網",
-    "description": "開啟靈感通道，支持夢境與直覺顯化。"
+    "description": "開啟靈感與想像，支持夢境與直覺顯化。"
   },
   {
     "name": "Sacred Mountain",
@@ -55,11 +55,6 @@
     "description": "釋放沉重情緒，打開心扉通往輕盈。"
   },
   {
-    "name": "Acceptance",
-    "zh_name": "接受",
-    "description": "擁抱當下，讓你與現實和平相處。"
-  },
-  {
     "name": "Clarity",
     "zh_name": "澄晰",
     "description": "清晰心智，協助釐清方向與意圖。"
@@ -72,62 +67,62 @@
   {
     "name": "Thieves",
     "zh_name": "盜賊",
-    "description": "強化防護場域，支持清淨與守護。"
+    "description": "強化防護場域，支持空氣清淨與免疫。"
   },
   {
     "name": "Transformation",
     "zh_name": "轉化",
-    "description": "支持深層蛻變，調整生命頻率。"
+    "description": "支持深層蛻變，讓你重新調整生命頻率。"
   },
   {
     "name": "Motivation",
     "zh_name": "動力",
-    "description": "喚醒行動力與信心，讓能量前進。"
+    "description": "喚醒行動力與信心，讓能量持續前進。"
   },
   {
     "name": "Envision",
     "zh_name": "願景",
-    "description": "協助看見藍圖，支持目標顯化。"
+    "description": "協助你看見心中藍圖，支持目標顯化旅程。"
   },
   {
     "name": "Aroma Siez",
     "zh_name": "舒活",
-    "description": "釋放緊繃與壓力，舒緩身心。"
+    "description": "釋放緊繃與壓力，舒緩身體與心靈的負荷。"
   },
   {
     "name": "AromaEase",
     "zh_name": "舒緩",
-    "description": "支持放鬆與釋壓，回到自在。"
+    "description": "支持放鬆與釋壓，幫助你回到自在呼吸的狀態。"
   },
   {
     "name": "Australian Kuranya",
     "zh_name": "澳洲彩虹",
-    "description": "融合澳洲植物能量，帶來淨化與更新。"
+    "description": "融合澳洲植物能量，帶來淨化與更新的感受。"
   },
   {
     "name": "Brain Power",
-    "zh_name": "智慧之源",
-    "description": "提升專注與記憶，讓靈感清晰湧現。"
+    "zh_name": "夢寶貝",
+    "description": "提升專注與記憶，讓靈感與智慧清晰湧現。"
   },
   {
     "name": "Build Your Dream",
     "zh_name": "築夢",
-    "description": "支持夢想顯化，實現心中藍圖。"
+    "description": "支持夢想顯化，協助你實現心中的藍圖。"
   },
   {
     "name": "Celebration",
     "zh_name": "慶典",
-    "description": "帶來喜悅榮耀，喚醒光采。"
+    "description": "帶來喜悅與榮耀的氛圍，喚醒生命的光采。"
   },
   {
     "name": "Citrus Fresh",
     "zh_name": "優橘",
-    "description": "清新活力，淨化心靈並帶來愉悅。"
+    "description": "清新活力的柑橘氣息，淨化心靈並帶來愉悅。"
   },
   {
     "name": "EndoFlex",
     "zh_name": "柔衡",
-    "description": "支持能量流動與內在平衡。"
+    "description": "支持能量流動與內分泌平衡，帶來輕盈與穩定。"
   },
   {
     "name": "Energy",
@@ -135,9 +130,29 @@
     "description": "振奮精神，提升體力與行動力。"
   },
   {
+    "name": "Evergreen Essence",
+    "zh_name": "常青精華",
+    "description": "喚起大地與森林能量，帶來清新與純淨。"
+  },
+  {
+    "name": "Exodus",
+    "zh_name": "埃及黃金",
+    "description": "靈性保護與古老智慧的支持，連結內在信念。"
+  },
+  {
+    "name": "Gathering",
+    "zh_name": "聚合",
+    "description": "幫助專注與靈性連結，召喚靈魂專注於使命。"
+  },
+  {
+    "name": "Gentle Baby",
+    "zh_name": "溫柔寶貝",
+    "description": "帶來柔和、滋養與呵護，適合孕期與親子。"
+  },
+  {
     "name": "Gratitude",
     "zh_name": "感恩",
-    "description": "喚醒感恩心態，提升正向能量。"
+    "description": "喚醒感恩心態，提升正向能量與幸福感。"
   },
   {
     "name": "Grounding",
@@ -147,96 +162,676 @@
   {
     "name": "Hope",
     "zh_name": "希望",
-    "description": "注入希望與光明，重新點燃信念。"
+    "description": "注入希望與光明的能量，支持靈魂重新點燃信念。"
   },
   {
     "name": "Humility",
     "zh_name": "謙卑",
-    "description": "柔化自我，連結更高智慧。"
+    "description": "柔化自我，讓你更容易臣服與連結更高智慧。"
   },
   {
     "name": "Inner Child",
     "zh_name": "內在小孩",
-    "description": "喚醒純真與創造力，帶來療癒。"
+    "description": "喚醒純真與創造力，帶來療癒與自我接納。"
   },
   {
     "name": "Inspiration",
     "zh_name": "靈感",
-    "description": "打開靈感之門，支持直覺流動。"
+    "description": "打開靈感之門，支持直覺與創造性的流動。"
   },
   {
     "name": "Into the Future",
     "zh_name": "未來展望",
-    "description": "放下過去，踏向嶄新未來。"
+    "description": "幫助你放下過去，勇敢踏向嶄新的未來。"
   },
   {
     "name": "Live with Passion",
     "zh_name": "熱情生活",
-    "description": "激發熱情與生命力，享受當下。"
+    "description": "激發熱情與生命力，鼓勵你盡情享受當下。"
   },
   {
     "name": "Magnify Your Purpose",
     "zh_name": "放大目標",
-    "description": "清晰專注使命，放大實現力量。"
+    "description": "支持你清晰專注於靈魂使命，放大實現的力量。"
   },
   {
     "name": "Melrose",
     "zh_name": "駐容",
-    "description": "帶來更新能量，支持清潔與煥新。"
+    "description": "帶來更新能量，支持身心清潔與煥然一新。"
   },
   {
     "name": "M-Grain",
     "zh_name": "頭頸舒緩",
-    "description": "舒緩緊繃與壓力，帶來放鬆。"
+    "description": "舒緩緊繃與壓力，帶來輕盈與放鬆。"
   },
   {
     "name": "PanAway",
     "zh_name": "舒敏",
-    "description": "帶來舒緩與修復，恢復平衡。"
+    "description": "帶來舒緩與修復，幫助恢復平衡。"
   },
   {
     "name": "Present Time",
     "zh_name": "當下",
-    "description": "回到此刻，增強專注臨在。"
+    "description": "協助你回到此時此刻，增強專注與臨在感。"
   },
   {
     "name": "Purification",
     "zh_name": "淨化",
-    "description": "清除雜質與負能量，恢復清新。"
+    "description": "清除負能量與雜質，恢復空間與心靈的清新。"
   },
   {
     "name": "Raven",
     "zh_name": "樂抒",
-    "description": "開放胸臆，支持順暢與釋放。"
+    "description": "開放胸臆，支持呼吸順暢與心靈釋放。"
   },
   {
     "name": "RutaVaLa",
     "zh_name": "舒眠",
-    "description": "放鬆休息，支持睡眠品質。"
+    "description": "協助放鬆，支持深度休息與睡眠品質。"
   },
   {
     "name": "SARA",
     "zh_name": "愛自己",
-    "description": "帶來情感支持，協助療癒創傷。"
+    "description": "帶來情感支持，幫助療癒過往創傷經驗。"
   },
   {
     "name": "Sensation",
     "zh_name": "感官",
-    "description": "喚醒感官與愛的能量，增強親密。"
+    "description": "喚醒感官與愛的能量，增強親密與連結。"
   },
   {
     "name": "3 Wise Men",
     "zh_name": "三位智者",
-    "description": "啟發靈性智慧與內在覺醒。"
+    "description": "啟發靈性智慧與內在覺醒，連結神聖能量。"
   },
   {
     "name": "Trauma Life",
     "zh_name": "創傷釋放",
-    "description": "支持深層釋放與修復。"
+    "description": "支持釋放深層創傷，帶來心靈修復的力量。"
   },
   {
     "name": "Tranquil",
     "zh_name": "寧靜",
-    "description": "帶來安定與放鬆，支持平和氛圍。"
+    "description": "帶來安定與放鬆，支持平和的氛圍。"
+  },
+  {
+    "name": "Aroma Life",
+    "zh_name": "Aroma Life",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "AromaEase Roll-On",
+    "zh_name": "AromaEase Roll-On",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Believe",
+    "zh_name": "Believe",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Deep Relief",
+    "zh_name": "Deep Relief",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Dragon Time",
+    "zh_name": "Dragon Time",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Forgive Me",
+    "zh_name": "Forgive Me",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Gather Strength",
+    "zh_name": "Gather Strength",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Harmony Plus",
+    "zh_name": "Harmony Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Highest Potential",
+    "zh_name": "Highest Potential",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Light the Fire",
+    "zh_name": "Light the Fire",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Longevity",
+    "zh_name": "Longevity",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Mister",
+    "zh_name": "Mister",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Balance",
+    "zh_name": "Oola Balance",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Grow",
+    "zh_name": "Oola Grow",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Peace & Calming II",
+    "zh_name": "Peace & Calming II",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Present Time Plus",
+    "zh_name": "Present Time Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Release Plus",
+    "zh_name": "Release Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Relaunch",
+    "zh_name": "Relaunch",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Relieve It",
+    "zh_name": "Relieve It",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Relieve Me",
+    "zh_name": "Relieve Me",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "SclarEssence",
+    "zh_name": "SclarEssence",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Surrender",
+    "zh_name": "Surrender",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Valor II",
+    "zh_name": "Valor II",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "White Light",
+    "zh_name": "White Light",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Ylang Harmony",
+    "zh_name": "Ylang Harmony",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Zest",
+    "zh_name": "Zest",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Abundance Plus",
+    "zh_name": "Abundance Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "AromaGuard",
+    "zh_name": "AromaGuard",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Awaken",
+    "zh_name": "Awaken",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Believe Plus",
+    "zh_name": "Believe Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Citrus Fresh Plus",
+    "zh_name": "Citrus Fresh Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Common Sense",
+    "zh_name": "Common Sense",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "En-R-G-E",
+    "zh_name": "En-R-G-E",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Forgiveness Plus",
+    "zh_name": "Forgiveness Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Gratitude Plus",
+    "zh_name": "Gratitude Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Harmony Mist",
+    "zh_name": "Harmony Mist",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Hope Plus",
+    "zh_name": "Hope Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Humility Plus",
+    "zh_name": "Humility Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Inner Harmony",
+    "zh_name": "Inner Harmony",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Journey On",
+    "zh_name": "Journey On",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Joy Plus",
+    "zh_name": "Joy Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Live with Passion Plus",
+    "zh_name": "Live with Passion Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Magnify+",
+    "zh_name": "Magnify+",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Melrose Plus",
+    "zh_name": "Melrose Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Mister Plus",
+    "zh_name": "Mister Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Morning Start",
+    "zh_name": "Morning Start",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Finance",
+    "zh_name": "Oola Finance",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Family",
+    "zh_name": "Oola Family",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Faith",
+    "zh_name": "Oola Faith",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Field",
+    "zh_name": "Oola Field",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Fun",
+    "zh_name": "Oola Fun",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Friends",
+    "zh_name": "Oola Friends",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Fitness",
+    "zh_name": "Oola Fitness",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Palo Santo Blend",
+    "zh_name": "Palo Santo Blend",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Peppermint Cedar",
+    "zh_name": "Peppermint Cedar",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Pine Citrus",
+    "zh_name": "Pine Citrus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Present Calm",
+    "zh_name": "Present Calm",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "RelaX",
+    "zh_name": "RelaX",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Sacred Frank",
+    "zh_name": "Sacred Frank",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Sacred Harmony",
+    "zh_name": "Sacred Harmony",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Sacred Valor",
+    "zh_name": "Sacred Valor",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Shutran",
+    "zh_name": "Shutran",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Thieves Aroma",
+    "zh_name": "Thieves Aroma",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Transformation Plus",
+    "zh_name": "Transformation Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Tranquil Plus",
+    "zh_name": "Tranquil Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Valor Roll-On",
+    "zh_name": "Valor Roll-On",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "White Angelica Plus",
+    "zh_name": "White Angelica Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Winter Nights",
+    "zh_name": "Winter Nights",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Abundance Mist",
+    "zh_name": "Abundance Mist",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Acceptance",
+    "zh_name": "Acceptance",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "AromaBright",
+    "zh_name": "AromaBright",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "AromaGuard Meadow Mist",
+    "zh_name": "AromaGuard Meadow Mist",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Awaken Plus",
+    "zh_name": "Awaken Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Believe Mist",
+    "zh_name": "Believe Mist",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Citrus Blossom",
+    "zh_name": "Citrus Blossom",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Cool Azul",
+    "zh_name": "Cool Azul",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Deep Relief Roll-On",
+    "zh_name": "Deep Relief Roll-On",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Envision Plus",
+    "zh_name": "Envision Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Gathering Plus",
+    "zh_name": "Gathering Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Grounding Plus",
+    "zh_name": "Grounding Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Harmony Roll-On",
+    "zh_name": "Harmony Roll-On",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Joy Roll-On",
+    "zh_name": "Joy Roll-On",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Light & Calm",
+    "zh_name": "Light & Calm",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Magnify Purpose Plus",
+    "zh_name": "Magnify Purpose Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Peaceful Night",
+    "zh_name": "Peaceful Night",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "RelaX Plus",
+    "zh_name": "RelaX Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Sacred Mountain Plus",
+    "zh_name": "Sacred Mountain Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Sensation Plus",
+    "zh_name": "Sensation Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Trauma Life Plus",
+    "zh_name": "Trauma Life Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "White Angelica Mist",
+    "zh_name": "White Angelica Mist",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "YL Seedlings Calm",
+    "zh_name": "YL Seedlings Calm",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Journey Within",
+    "zh_name": "Journey Within",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Dream Catcher Plus",
+    "zh_name": "Dream Catcher Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Women",
+    "zh_name": "Oola Women",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Men",
+    "zh_name": "Oola Men",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Energy Plus",
+    "zh_name": "Energy Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "EndoFlex Plus",
+    "zh_name": "EndoFlex Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Purification Plus",
+    "zh_name": "Purification Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Highest Potential Plus",
+    "zh_name": "Highest Potential Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Aroma Siez Plus",
+    "zh_name": "Aroma Siez Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "RC Plus",
+    "zh_name": "RC Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Raven Plus",
+    "zh_name": "Raven Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Longevity Plus",
+    "zh_name": "Longevity Plus",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Body",
+    "zh_name": "Oola Body",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Mind",
+    "zh_name": "Oola Mind",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Oola Spirit",
+    "zh_name": "Oola Spirit",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Empower",
+    "zh_name": "Empower",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Elevate",
+    "zh_name": "Elevate",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Embrace",
+    "zh_name": "Embrace",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Encircle",
+    "zh_name": "Encircle",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Enkindle",
+    "zh_name": "Enkindle",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Enliven",
+    "zh_name": "Enliven",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Enlight",
+    "zh_name": "Enlight",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Enthrall",
+    "zh_name": "Enthrall",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Evoke",
+    "zh_name": "Evoke",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
+  },
+  {
+    "name": "Expand",
+    "zh_name": "Expand",
+    "description": "（佔位描述）可用官方中文名稱與能量說明覆蓋。"
   }
 ]

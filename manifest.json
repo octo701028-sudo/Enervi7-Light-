@@ -1,10 +1,10 @@
 {
   "name": "Enervi7",
   "short_name": "Enervi7",
-  "start_url": "./index.html",
+  "start_url": ".",
   "display": "standalone",
-  "background_color": "#0f0b1e",
-  "theme_color": "#6a00ff",
+  "background_color": "#0f0b1d",
+  "theme_color": "#7b3fe4",
   "icons": [
     {
       "src": "icon-192.png",
