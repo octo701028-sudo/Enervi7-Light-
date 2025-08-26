@@ -10,13 +10,233 @@
     "description": "平衡身心能量，促進內在與關係的協調連結。"
   },
   {
-    "name": "Forgiveness",
-    "zh_name": "寬恕",
-    "description": "釋放過去結，帶來心靈的自由與療癒。"
+    "name": "Joy",
+    "zh_name": "喜悅",
+    "description": "喚醒內心喜悅與愛的頻率，帶來幸福感。"
   },
   {
     "name": "Valor",
     "zh_name": "勇氣",
     "description": "支撐內在力量，幫助你跨越恐懼與挑戰。"
+  },
+  {
+    "name": "Abundance",
+    "zh_name": "豐盛",
+    "description": "提升顯化能量，吸引繁盛與豐裕。"
+  },
+  {
+    "name": "Forgiveness",
+    "zh_name": "寬恕",
+    "description": "釋放過去結，帶來心靈的自由與療癒。"
+  },
+  {
+    "name": "Stress Away",
+    "zh_name": "樂自在",
+    "description": "溫柔舒緩壓力，讓身心回歸柔軟與自在。"
+  },
+  {
+    "name": "Dream Catcher",
+    "zh_name": "捕夢網",
+    "description": "開啟靈感通道，支持夢境與直覺顯化。"
+  },
+  {
+    "name": "Sacred Mountain",
+    "zh_name": "聖山",
+    "description": "穩固如山的內在力量，帶來神聖守護感。"
+  },
+  {
+    "name": "White Angelica",
+    "zh_name": "白使者",
+    "description": "純淨守護能量，讓你感受到被愛與守護。"
+  },
+  {
+    "name": "Release",
+    "zh_name": "釋放",
+    "description": "釋放沉重情緒，打開心扉通往輕盈。"
+  },
+  {
+    "name": "Acceptance",
+    "zh_name": "接受",
+    "description": "擁抱當下，讓你與現實和平相處。"
+  },
+  {
+    "name": "Clarity",
+    "zh_name": "澄晰",
+    "description": "清晰心智，協助釐清方向與意圖。"
+  },
+  {
+    "name": "R.C.",
+    "zh_name": "樂C",
+    "description": "促進呼吸與能量流動，帶來清新感。"
+  },
+  {
+    "name": "Thieves",
+    "zh_name": "盜賊",
+    "description": "強化防護場域，支持清淨與守護。"
+  },
+  {
+    "name": "Transformation",
+    "zh_name": "轉化",
+    "description": "支持深層蛻變，調整生命頻率。"
+  },
+  {
+    "name": "Motivation",
+    "zh_name": "動力",
+    "description": "喚醒行動力與信心，讓能量前進。"
+  },
+  {
+    "name": "Envision",
+    "zh_name": "願景",
+    "description": "協助看見藍圖，支持目標顯化。"
+  },
+  {
+    "name": "Aroma Siez",
+    "zh_name": "舒活",
+    "description": "釋放緊繃與壓力，舒緩身心。"
+  },
+  {
+    "name": "AromaEase",
+    "zh_name": "舒緩",
+    "description": "支持放鬆與釋壓，回到自在。"
+  },
+  {
+    "name": "Australian Kuranya",
+    "zh_name": "澳洲彩虹",
+    "description": "融合澳洲植物能量，帶來淨化與更新。"
+  },
+  {
+    "name": "Brain Power",
+    "zh_name": "智慧之源",
+    "description": "提升專注與記憶，讓靈感清晰湧現。"
+  },
+  {
+    "name": "Build Your Dream",
+    "zh_name": "築夢",
+    "description": "支持夢想顯化，實現心中藍圖。"
+  },
+  {
+    "name": "Celebration",
+    "zh_name": "慶典",
+    "description": "帶來喜悅榮耀，喚醒光采。"
+  },
+  {
+    "name": "Citrus Fresh",
+    "zh_name": "優橘",
+    "description": "清新活力，淨化心靈並帶來愉悅。"
+  },
+  {
+    "name": "EndoFlex",
+    "zh_name": "柔衡",
+    "description": "支持能量流動與內在平衡。"
+  },
+  {
+    "name": "Energy",
+    "zh_name": "能量",
+    "description": "振奮精神，提升體力與行動力。"
+  },
+  {
+    "name": "Gratitude",
+    "zh_name": "感恩",
+    "description": "喚醒感恩心態，提升正向能量。"
+  },
+  {
+    "name": "Grounding",
+    "zh_name": "穩定",
+    "description": "幫助紮根於當下，讓心靈安定踏實。"
+  },
+  {
+    "name": "Hope",
+    "zh_name": "希望",
+    "description": "注入希望與光明，重新點燃信念。"
+  },
+  {
+    "name": "Humility",
+    "zh_name": "謙卑",
+    "description": "柔化自我，連結更高智慧。"
+  },
+  {
+    "name": "Inner Child",
+    "zh_name": "內在小孩",
+    "description": "喚醒純真與創造力，帶來療癒。"
+  },
+  {
+    "name": "Inspiration",
+    "zh_name": "靈感",
+    "description": "打開靈感之門，支持直覺流動。"
+  },
+  {
+    "name": "Into the Future",
+    "zh_name": "未來展望",
+    "description": "放下過去，踏向嶄新未來。"
+  },
+  {
+    "name": "Live with Passion",
+    "zh_name": "熱情生活",
+    "description": "激發熱情與生命力，享受當下。"
+  },
+  {
+    "name": "Magnify Your Purpose",
+    "zh_name": "放大目標",
+    "description": "清晰專注使命，放大實現力量。"
+  },
+  {
+    "name": "Melrose",
+    "zh_name": "駐容",
+    "description": "帶來更新能量，支持清潔與煥新。"
+  },
+  {
+    "name": "M-Grain",
+    "zh_name": "頭頸舒緩",
+    "description": "舒緩緊繃與壓力，帶來放鬆。"
+  },
+  {
+    "name": "PanAway",
+    "zh_name": "舒敏",
+    "description": "帶來舒緩與修復，恢復平衡。"
+  },
+  {
+    "name": "Present Time",
+    "zh_name": "當下",
+    "description": "回到此刻，增強專注臨在。"
+  },
+  {
+    "name": "Purification",
+    "zh_name": "淨化",
+    "description": "清除雜質與負能量，恢復清新。"
+  },
+  {
+    "name": "Raven",
+    "zh_name": "樂抒",
+    "description": "開放胸臆，支持順暢與釋放。"
+  },
+  {
+    "name": "RutaVaLa",
+    "zh_name": "舒眠",
+    "description": "放鬆休息，支持睡眠品質。"
+  },
+  {
+    "name": "SARA",
+    "zh_name": "愛自己",
+    "description": "帶來情感支持，協助療癒創傷。"
+  },
+  {
+    "name": "Sensation",
+    "zh_name": "感官",
+    "description": "喚醒感官與愛的能量，增強親密。"
+  },
+  {
+    "name": "3 Wise Men",
+    "zh_name": "三位智者",
+    "description": "啟發靈性智慧與內在覺醒。"
+  },
+  {
+    "name": "Trauma Life",
+    "zh_name": "創傷釋放",
+    "description": "支持深層釋放與修復。"
+  },
+  {
+    "name": "Tranquil",
+    "zh_name": "寧靜",
+    "description": "帶來安定與放鬆，支持平和氛圍。"
   }
 ]

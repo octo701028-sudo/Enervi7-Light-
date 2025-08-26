@@ -1,7 +1,7 @@
 {
   "name": "Enervi7",
   "short_name": "Enervi7",
-  "start_url": ".",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0f0b1e",
   "theme_color": "#6a00ff",
